@@ -1,0 +1,144 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    background: url(assets/bgimage.jpg);
+    height:100vh ;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.mainHeading{
+    color: #DC5F00;
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+.nLogo{
+    height: 100%;
+    width:  80px;
+}
+
+#navBar{
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+.ttt{
+    padding: 0px 0px 20px 0px;
+    color: #D36B00;
+    text-shadow: 2px 1px #d1e9f3;
+}
+
+.gmContainer{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3, 10vw);
+    transition: .3s ease-in;
+    position: relative;
+}
+
+.box{
+    border: solid 2px #00ADB5;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-image:linear-gradient(black, #EF6C35, #dc5f009c, black) ;
+    box-shadow: 5px 5px 10px 2px #e7f6f7;
+}
+
+.bt{
+    border-top: 0;
+}
+
+.br{
+    border-right: 0;
+}
+
+.bb{
+    border-bottom: 0;
+}
+
+.bl{
+    border-left: 0;
+}
+
+.info{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FCAC0C;
+}
+
+#reset{
+    all: unset;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #E48257;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif, Verdana, Tahoma;
+
+}
+
+#reset:hover{
+    background: #f49e7a;
+}
+
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gameOver img{
+    height: 32vw;
+    width: 0;
+    margin-top: -30vw;
+    opacity: 0.9;
+    transition: width 1s ease-in-out;
+    transition-delay: .5s;
+}
+
+.line{
+    width: 0;
+    height: 3px;
+    background-color: #E48257;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    
+}
